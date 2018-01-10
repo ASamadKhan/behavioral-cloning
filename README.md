@@ -110,20 +110,18 @@ To produce more data I augmented the data.<br>
 Tot tackle day and night conditio random brightness was introduced. This is done first by converting image into HLS channel. then L channel was scalled with random value of brightness. below image shows how random brightness is introduced. 
 
 ![alt text][image3]
+To simulate the effect of car being at different position on the road camera images are shifted horizentally. This is done by adding an offset correspondin to the shift to the steering angle. images are also shfted vertically by random number by giving an effect of driving up or dow the slope.
 ![alt text][image4]
+Shadow is introduced at random position in the image. below figure shows the effect of shadowing. 
 ![alt text][image5]
-
-Then I repeated this process on track two in order to get more data points.
-
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
-
+To augment the data more , I also flipped images and angles. here is an image that has then been flipped:
 ![alt text][image6]
+to remove horizon and car's hood 50 pixels from the top and 25 pixels from the bottom were cropped. 
+![alt text][image7]
+In the last stage image was resized to 64*64.
 ![alt text][image7]
 
-Etc ....
-
-After the collection process, I had X number of data points. I then preprocessed this data by ...
-
+since there are three camera views so at any single time I am randomly picking only oe view.
 
 I finally randomly shuffled the data set and put Y% of the data into a validation set. 
 
