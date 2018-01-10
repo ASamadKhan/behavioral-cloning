@@ -102,11 +102,12 @@ Here is a visualization of the architecture (note: visualizing the architecture 
 
 #### 3. Creation of the Training Set & Training Process
 
-To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
+In the first place I recrded more than two laps using the first track. I was not using the analog joystick so i was ot very happy with the data and in fact It was not helping me with the learning two. Then I decided to use udacity sample data.
+Here is one of the image from the centre camera.
 
 ![alt text][image2]
-
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+To produce more data I augmented the data.<br>
+Tot tackle day and night conditio random brightness was introduced. This is done first by converting image into HLS channel. then L channel was scalled with random value of brightness. below image shows how random brightness is introduced. 
 
 ![alt text][image3]
 ![alt text][image4]
