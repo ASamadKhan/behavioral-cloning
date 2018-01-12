@@ -18,12 +18,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./images/nvidia model.png "NVIDIA"
-[image2]: ./images/final_model.png "Final Model"
-[image3]: ./images/center.png "Center Image"
-[image4]: ./images/brightness.png "Recovery Image"
-[image5]: ./images/shift.png "Recovery Image"
-[image6]: ./images/shadow.png "shadow Image"
-[image7]: ./images/flipping.png "Flipped Image"
+
 
 [//]: # (Image References)
 
