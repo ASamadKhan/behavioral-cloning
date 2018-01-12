@@ -105,10 +105,12 @@ To augment the data more , I also flipped images and angles. here is an image th
 <br>
 to remove horizon and car's hood 50 pixels from the top and 25 pixels from the bottom were cropped. This is due to the fact that we do not need it for decision making. 
 ![alt text][image8]
+<br>
 In the last stage image was resized to 64*64.
+<br>
 ![alt text][image9]
 
-since there are three camera views so at any single time I am randomly picking only oe view.
+since there are three camera views so at any single time I am randomly picking only one view.
 
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
