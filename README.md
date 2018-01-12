@@ -18,13 +18,15 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/placeholder.png "Model Visualization"
+[image1]: ./images/nvidia model.png "NVIDIA"
 [image2]: ./images/final_model.png "Final Model"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
+[image3]: ./images/center.png "Center Image"
+[image4]: ./images/brightness.png "Recovery Image"
+[image5]: ./images/shift.png "Recovery Image"
+[image6]: ./images/shadow.png "shadow Image"
+[image7]: ./images/flipping.png "Flipped Image"
+[image8]: ./images/crop.png "Cropping"
+[image9]: ./images/resize.png "Resize"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -80,7 +82,7 @@ For details about how I created the training data, see the next section.
 
 
 My first step was to use a convolution neural network model similar to the End to End Learning for Self-Driving Cars from NVidia.   
-[image1]: ./examples/placeholder.png "Model Visualization"
+![alt text][image1]
 
 In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that model was overfitting and taking a lot of time for training. to reduce the over all time in trainig I cropeed and resized my input images into 64x64.
 
@@ -96,28 +98,28 @@ The final model architecture (model.py lines 18-24) consisted of a convolution n
 
 Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
 
-![alt text][image1]
+![alt text][image2]
 
 #### 3. Creation of the Training Set & Training Process
 
 In the first place I recrded more than two laps using the first track. I was not using the analog joystick so i was ot very happy with the data and in fact It was not helping me with the learning two. Then I decided to use udacity sample data.
 Here is one of the image from the centre camera.
 
-![alt text][image2]
+![alt text][image3]
 To produce more data I augmented the data.<br>
 Tot tackle day and night conditio random brightness was introduced. This is done first by converting image into HLS channel. then L channel was scalled with random value of brightness. below image shows how random brightness is introduced. 
 
-![alt text][image3]
-To simulate the effect of car being at different position on the road camera images are shifted horizentally. This is done by adding an offset correspondin to the shift to the steering angle. images are also shfted vertically by random number by giving an effect of driving up or dow the slope.
 ![alt text][image4]
-Shadow is introduced at random position in the image. below figure shows the effect of shadowing. 
+To simulate the effect of car being at different position on the road camera images are shifted horizentally. This is done by adding an offset correspondin to the shift to the steering angle. images are also shfted vertically by random number by giving an effect of driving up or dow the slope.
 ![alt text][image5]
-To augment the data more , I also flipped images and angles. here is an image that has then been flipped:
+Shadow is introduced at random position in the image. below figure shows the effect of shadowing. 
 ![alt text][image6]
+To augment the data more , I also flipped images and angles. here is an image that has then been flipped:
+![alt text][image7]
 to remove horizon and car's hood 50 pixels from the top and 25 pixels from the bottom were cropped. 
-![alt text][image7]
+![alt text][image8]
 In the last stage image was resized to 64*64.
-![alt text][image7]
+![alt text][image9]
 
 since there are three camera views so at any single time I am randomly picking only oe view.
 
