@@ -15,21 +15,12 @@ The goals / steps of this project are the following:
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
 
-[//]: # (Image References)
-
-[image1]: ./images/nvidiamodel.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
 
 
 
 [//]: # (Image References)
 
-[image1]: ./images/nvidia model.png "NVIDIA"
+[image1]: ./images/nvidiamodel.png "NVIDIA"
 [image2]: ./images/final_model.png "Final Model"
 [image3]: ./images/center.png "Center Image"
 [image4]: ./images/brightness.png "Recovery Image"
