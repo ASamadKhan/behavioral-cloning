@@ -58,13 +58,13 @@ The New Model.ipynb file contains the code for training and saving the convoluti
 
 My model consists of a convolution neural network with 5x5, 3x3  filter sizes and depths between 24 and 64 (last code cell in New Model.ipynb) 
 
-The model includes RELU to introduce nonlinearity (last code cell), and the data is normalized in the model using a Keras lambda layer (last code cell). 
+The model includes ELU to introduce nonlinearity (last code cell), and the data is normalized in the model using a Keras lambda layer (last code cell). 
 
 #### 2. Attempts to reduce overfitting in the model
 
 The model contains dropout layers in order to reduce overfitting (New Model.ipynb last code cell). 
 
-Not only model was trained and validated on different data sets but augmentation was used to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+Not only model was trained and validated on different data sets but augmentation was used to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the 1st track.
 
 #### 3. Model parameter tuning
 
